@@ -33,3 +33,4 @@ if (bmimark > bmijohn) {
     console.log(`"John BMI ${bmijohn} is Higher then Mark BMI ${bmimark}"`);
 }
 
+
