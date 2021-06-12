@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>JAVASCRIPT IS FUN language is fun</title>
   </head>
   <body>
     <h1>This is a javascript code</h1>
     <p class="first">
-      We are working on learning javascript code To learn more about me
+      We are working on learning javascript code. To learn more about me
       checkout:
       <a href="https://github.com/hirakdebnath/hirakdebnath">Click here</a>
     </p>
@@ -19,11 +20,11 @@
       id="this-image"
       src="https://media-exp1.licdn.com/dms/image/C5603AQGRvHg-iGUWsw/profile-displayphoto-shrink_200_200/0/1516976472742?e=1626307200&v=beta&t=Llcl7IAiDerTNbyl1WZ-_BAWg6W_9vzVdJk9qDp2M7M"
     />
-    <div id="nameing">
+    <form id="nameing">
       <h2>Your name here</h2>
-      <p>Please fill in this form!</p>
+      <p class="first">Please fill in this form!</p>
       <input type="text" placeholder="your name please" />
       <button>ok!</button>
-    </div>
+    </form>
   </body>
 </html>
