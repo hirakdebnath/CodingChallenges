@@ -1,0 +1,30 @@
+// O(n2) space | Worst: O(n3) time, Average : O(n2) time
+function fourNumberSum(array, targetSum) {
+  const allpairSums={};
+	const quadruplets=[];
+	for(let i=1; i < array.length-1; i++){
+		for (let j = i+1; j < array.length; j++ ){
+			const currentSum = array[i]+ array[j];
+			const difference = targetSum-currentSum;
+			if (difference in allpairSums) {
+				for ( const pair of allpairSums[difference]){
+					quadruplets.push(pair.concat([array[i],array[j]]));
+				}
+			}
+		}
+		for(let k=0; k< i; k++){
+			const currentSum= array[k]+ array[i];
+			if(!(currentSum in allpairSums)){
+				allpairSums[currentSum]= [[array[i], array[k]]];
+			}
+			else {
+				allpairSums[currentSum].push([array[i],array[k]]);
+			}
+		}
+	}
+	return quadruplets;
+	
+}
+
+// Do not edit the line below.
+exports.fourNumberSum = fourNumberSum;
