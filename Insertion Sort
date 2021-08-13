@@ -1,3 +1,5 @@
+// space : O(1) time : O (n^2) 
+
 function insertionSort (array){
 	for(let i=1; i< array.length ; i++){
 		let j=i;
