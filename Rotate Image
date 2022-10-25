@@ -1,0 +1,27 @@
+//Brute Force approach
+
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        
+        int n = matrix.size();
+        vector<vector<int>> rotate(n,vector<int>(n));
+    
+       int r=n-1,c=0;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                rotate[i][j] = matrix[r][c];
+                r--;
+                if(r==-1){
+                  r=n-1;
+                  c++;
+                }
+            }
+        }
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++)
+                matrix[i][j] = rotate[i][j];
+        }
+    }
+};
